@@ -1,4 +1,4 @@
-Visit our website [TravelGuru](https://travel-52c95.web.app).
+Visit our website [Car Hut](https://car-hut.web.app/).
 
 - All kinds of cars
 - Exclusive Collection
