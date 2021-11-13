@@ -1,0 +1,39 @@
+.Booking{
+    padding: 50px;
+}
+
+.container{
+
+
+}
+
+.details img{
+    height: 150px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.details{
+    margin-top: 90px;
+
+    /* margin-bottom: 20px; */
+
+    /* margin-left: 40px;
+    width: 350px; */
+    height: 600px;
+    width: 300px;
+    /* align-items: center; */
+    background-color: rgb(227, 236, 236);
+    border: 1px solid rgb(231, 220, 220);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 2px #0000007c;
+
+}
+.details p{
+    padding: 10px;
+    margin: 10px;
+}
+
+.details button{
+    box-shadow: 1px 1px 10px 2px #0000007c;
+}

@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name": "BMW",
+        "price": "$50000",
+        "description": "Bayerische Motoren Werke AG, commonly referred to as BMW, is a German multinational corporate manufacturer of luxury vehicles and motorcycles headquartered in Munich, Bavaria, Germany",
+        "img": "https://i.ibb.co/qRw29dt/car-5.png"
+    },
+    {
+        "id": 2,
+        "name": "Audi",
+        "price": "$10000",
+        "description": "Audi AG is a German automotive manufacturer of luxury vehicles headquartered in Ingolstadt, Bavaria, Germany. As a subsidiary of its parent company, the Volkswagen Group, Audi produces vehicles in nine production facilities worldwide",
+        "img": "https://i.ibb.co/Wtj4bmN/car-4.png"
+    },
+    {
+        "id": 4,
+        "name": "Mercedes-Benz",
+        "price": "$200000",
+        "description": "Mercedes-Benz, commonly referred to as Mercedes, is a German luxury automotive marque. Mercedes-Benz and subsidiary Mercedes-Benz AG – of Daimler AG – are headquartered in Stuttgart, Baden-Württemberg, Germany. Mercedes-Benz produces consumer luxury vehicles and commercial vehicles",
+        "img": "https://i.ibb.co/DKgq92f/car-1.png"
+    },
+    {
+        "id": 5,
+        "name": "KIA",
+        "price": "$25000",
+        "description": "Kia Corporation is a South Korean multinational automobile manufacturer headquartered in Seoul, South Korea. It is South Korea's second largest automobile manufacturer after Hyundai Motor Company, with sales of over 2.8 million vehicles in 201",
+        "img": "https://i.ibb.co/pQsbXhp/car-7.png"
+    },
+    {
+        "id": 6,
+        "name": "Honda",
+        "price": "$28000",
+        "description": "Honda Motor Company, Ltd. is a Japanese public multinational conglomerate manufacturer of automobiles, motorcycles, and power equipment, headquartered in Minato, Tokyo, Japan",
+        "img": "https://i.ibb.co/jwnDtcM/car-6.png"
+    },
+    {
+        "id": 7,
+        "name": "Chevrolet",
+        "price": "$55000",
+        "description": "Chevrolet, colloquially referred to as Chevy and formally the Chevrolet Division of General Motors Company, is an American automobile division of the American manufacturer General Motors",
+        "img": "https://i.ibb.co/LvmqWHj/car-8.png"
+    },
+    {
+        "id": 8,
+        "name": "Volkswagen",
+        "price": "$10000",
+        "description": "The Volkswagen AG, known internationally as the Volkswagen Group, is a German multinational automotive manufacturing corporation headquartered in Wolfsburg, Lower Saxony, Germany, and since the late  ",
+        "img": "https://i.ibb.co/0Ydc3yD/car-2.png"
+    },
+    {
+        "id": 9,
+        "name": "Lexus",
+        "price": "$100000",
+        "description": "Lexus is the luxury vehicle division of the Japanese automaker Toyota. The Lexus brand is marketed in more than 70 countries and territories worldwide and is Japan's largest-selling make of premium cars. It has ranked among the 10 largest Japanese global brands in market value. Lexus is headquartered in Nagoya, Japan",
+        "img": "https://i.ibb.co/qRw29dt/car-5.png"
+    }
+]
