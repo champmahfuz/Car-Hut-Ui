@@ -32,7 +32,7 @@ const Dashboard = () => {
                                         <Link to={`${url}/allProducts`}>All Products</Link>
                                         {
                                             admin && <>
-                                                <Link to={`${url}makeAdmin`}>Make Admin</Link>
+                                                <Link to={`${url}/makeAdmin`}>Make Admin</Link>
                                                 <Link to={`${url}/manageProducts`}>Manage Products</Link>
                                             </>
                                         }
