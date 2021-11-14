@@ -15,7 +15,7 @@ const MyProducts = () => {
     return (
         <div>
 
-            <h4>My Products</h4>
+            <h4>My Order Products</h4>
             <div className="myProduct-container">
 
 

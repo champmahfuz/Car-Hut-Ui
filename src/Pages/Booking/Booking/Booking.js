@@ -1,30 +1,3 @@
-// import React, { useEffect, useState } from 'react';
-// import { useParams } from 'react-router';
-
-// const Booking = () => {
-//     const { productId } = useParams();
-//     const [product, setProduct] = useState({})
-
-//     useEffect(() => {
-//         fetch(`https://murmuring-wave-81699.herokuapp.com/products/${productId}`)
-//             .then(res => res.json())
-//             .then(data => setProduct(data));
-//     }, [])
-//     return (
-//         <div>
-//             <img src={product.img} alt="" />
-//             <h2>{product.name}</h2>
-//             <p>{product.price}</p>
-//             <p>{product.description}</p>
-//             {/* <h2>This is Booking:{productId}</h2> */}
-//         </div>
-//     );
-// };
-
-// export default Booking;
-
-
-
 import React, { useEffect, useRef, useState } from 'react';
 import { Card, Form, Button } from 'react-bootstrap';
 import { useParams } from 'react-router';

@@ -1,12 +1,12 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Card, Table } from 'react-bootstrap';
 
 
 const AllProduct = ({ allProduct }) => {
     const { _id, name, price, description, username, status, email } = allProduct;
     return (
         <>
-            <div className=" mr-3 w-100  d-flex justify-content-center align-items-center row row-cols-1 row-cols-md-4 my-3 g-5">
+            {/* <div className=" mr-3 w-100  d-flex justify-content-center align-items-center row row-cols-1 row-cols-md-4 my-3 g-5">
                 <Card className="mx-3  ">
 
                     <Card.Body>
@@ -17,7 +17,18 @@ const AllProduct = ({ allProduct }) => {
                         <p>Status :{status}</p>
                     </Card.Body>
                 </Card>
-            </div>
+            </div> */}
+
+
+            <tr>
+
+                <td>{name}</td>
+                <td>{username}</td>
+                <td>{email}</td>
+                <td>{price}</td>
+                <td>{status}</td>
+            </tr>
+
         </>
     );
 };

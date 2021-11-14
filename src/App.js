@@ -33,18 +33,13 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route path="/products">
+            <PrivateRoute path="/products">
               <Products></Products>
-            </Route>
-            {/* <Route path="/addProduct">
+            </PrivateRoute>
+            <Route path="/addProduct">
               <AddProduct></AddProduct>
-            </Route> */}
-            {/* <PrivateRoute path="/manageProducts">
-              <ManageProducts></ManageProducts>
-            </PrivateRoute> */}
-            {/* <PrivateRoute path="/makeAdmin">
-              <MakeAdmin></MakeAdmin>
-            </PrivateRoute> */}
+            </Route>
+
             <PrivateRoute path="/booking/:productId">
               <Booking></Booking>
             </PrivateRoute>
@@ -54,12 +49,7 @@ function App() {
             <PrivateRoute path="/dashboard">
               <Dashboard></Dashboard>
             </PrivateRoute>
-            {/* <PrivateRoute path="/allProducts">
-              <AllProducts></AllProducts>
-            </PrivateRoute> */}
-            {/* <PrivateRoute path="/myProducts">
-              <MyProducts></MyProducts>
-            </PrivateRoute> */}
+
             <Route path="/register">
               <Register></Register>
             </Route>

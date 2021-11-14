@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Table } from 'react-bootstrap';
 import useAuth from '../../hooks/useAuth';
 import AllProduct from '../AllProduct/AllProduct';
 
@@ -14,15 +15,33 @@ const AllProducts = () => {
     }, [])
     return (
         <div>
-            <h4>All Products {allProducts.length}</h4>
+            <h4>All Order {allProducts.length}</h4>
             <div className="allProduct-container">
+                <Table responsive>
+                    <thead>
+                        <tr>
 
-                {
-                    allProducts.map(allProduct => <AllProduct
-                        key={allProduct._id}
-                        allProduct={allProduct}
-                    ></AllProduct>)
-                }
+                            <th>Product</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Price</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        {
+                            allProducts.map(allProduct => <AllProduct
+                                key={allProduct._id}
+                                allProduct={allProduct}
+                            ></AllProduct>)
+                        }
+                    </tbody>
+
+
+                </Table>
+
+
             </div>
         </div>
     );

@@ -9,7 +9,10 @@ import {
     useRouteMatch
 } from "react-router-dom";
 import useAuth from '../../../hooks/useAuth';
+import Payments from '../../../Payments/Payments';
+import AddProduct from '../../AddProduct/AddProduct';
 import AllProducts from '../../AllProducts/AllProducts';
+import Logout from '../../Logout/Logout';
 import MakeAdmin from '../../MakeAdmin/MakeAdmin';
 import ManageProducts from '../../ManageProducts/ManageProducts';
 import MyProducts from '../../MyProducts/MyProducts';
@@ -28,15 +31,22 @@ const Dashboard = () => {
                                 <div className="bg-light rounded-3 py-4 border" style={{ minHeight: '80vh', position: 'sticky', top: '114px' }}>
                                     <Nav variant="light" className="flex-column dash-nav">
                                         <Link to={`${url}`}>DashBoard</Link>
-                                        <Link to={`${url}/myProducts`}>My Products</Link>
-                                        <Link to={`${url}/allProducts`}>All Products</Link>
+                                        <Link to={`${url}/myProducts`}>My Order Products</Link>
+                                        <Link to={`${url}/allProducts`}>All Order Products</Link>
+
+
+
                                         {
                                             admin && <>
                                                 <Link to={`${url}/makeAdmin`}>Make Admin</Link>
                                                 <Link to={`${url}/manageProducts`}>Manage Products</Link>
+                                                <Link to={`${url}/addProduct`}>AddProducts</Link>
+
                                             </>
                                         }
                                         <Link to={`${url}/review`}>Review</Link>
+                                        <Link to={`${url}/payments`}>Payments</Link>
+                                        <Link to={`${url}/logout`}>LogOut</Link>
                                     </Nav>
                                 </div>
                             </Col>
@@ -50,6 +60,9 @@ const Dashboard = () => {
                                         <Route path={`${path}/makeAdmin`}>
                                             <MakeAdmin></MakeAdmin>
                                         </Route>
+                                        <Route path={`${path}/addProduct`}>
+                                            <AddProduct></AddProduct>
+                                        </Route>
                                         <Route path={`${path}/allProducts`}>
                                             <AllProducts></AllProducts>
                                         </Route>
@@ -62,6 +75,13 @@ const Dashboard = () => {
                                         <Route path={`${path}/review`}>
                                             <Review></Review>
                                         </Route>
+                                        <Route path={`${path}/payments`}>
+                                            <Payments></Payments>
+                                        </Route>
+                                        <Route path={`${path}/logout`}>
+                                            <Logout></Logout>
+                                        </Route>
+
                                     </Switch>
                                 </div>
                             </Col>
