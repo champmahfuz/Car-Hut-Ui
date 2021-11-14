@@ -1,0 +1,13 @@
+.dashbord{
+    background-color: black !important;
+}
+.titel{
+    text-decoration: none !important;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+}
+.titel:hover{
+background-color: red;
+color: white;
+}

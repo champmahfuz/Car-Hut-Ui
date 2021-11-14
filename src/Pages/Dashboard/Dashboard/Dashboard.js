@@ -17,6 +17,7 @@ import MakeAdmin from '../../MakeAdmin/MakeAdmin';
 import ManageProducts from '../../ManageProducts/ManageProducts';
 import MyProducts from '../../MyProducts/MyProducts';
 import Review from '../../Review/Review';
+import '../Dashboard.css'
 
 const Dashboard = () => {
     let { path, url } = useRouteMatch();
@@ -28,25 +29,25 @@ const Dashboard = () => {
                     <Tab.Container id="left-tabs-example" defaultActiveKey="my-order">
                         <Row xs={1} sm={1} md={2} lg={2} xl={2}>
                             <Col xs={12} sm={12} md={4} lg={3} xl={3}>
-                                <div className="bg-light rounded-3 py-4 border" style={{ minHeight: '80vh', position: 'sticky', top: '114px' }}>
-                                    <Nav variant="light" className="flex-column dash-nav">
-                                        <Link to={`${url}`}>DashBoard</Link>
-                                        <Link to={`${url}/myProducts`}>My Order Products</Link>
-                                        <Link to={`${url}/allProducts`}>All Order Products</Link>
+                                <div className="bg-light dashbord rounded-3 py-4 border" style={{ minHeight: '80vh', position: 'sticky', top: '114px' }}>
+                                    <Nav variant="light" className=" flex-column dash-nav">
+                                        <Link className="titel" to={`${url}`}>DashBoard</Link>
+                                        <Link className="titel" to={`${url}/myProducts`}>My Order Products</Link>
+                                        <Link className="titel" to={`${url}/allProducts`}>All Order Products</Link>
 
 
 
                                         {
                                             admin && <>
-                                                <Link to={`${url}/makeAdmin`}>Make Admin</Link>
-                                                <Link to={`${url}/manageProducts`}>Manage Products</Link>
-                                                <Link to={`${url}/addProduct`}>AddProducts</Link>
+                                                <Link className="titel" to={`${url}/makeAdmin`}>Make Admin</Link>
+                                                <Link className="titel" to={`${url}/manageProducts`}>Manage Products</Link>
+                                                <Link className="titel" to={`${url}/addProduct`}>AddProducts</Link>
 
                                             </>
                                         }
-                                        <Link to={`${url}/review`}>Review</Link>
-                                        <Link to={`${url}/payments`}>Payments</Link>
-                                        <Link to={`${url}/logout`}>LogOut</Link>
+                                        <Link className="titel" to={`${url}/review`}>Review</Link>
+                                        <Link className="titel" to={`${url}/payments`}>Payments</Link>
+                                        <Link className="titel" to={`${url}/logout`}>LogOut</Link>
                                     </Nav>
                                 </div>
                             </Col>

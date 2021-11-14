@@ -1,0 +1,17 @@
+.title{
+    text-decoration: none !important;
+    color: white;
+    
+    padding: 5px 10px;
+    font-size: 18px;
+}
+.title:hover{
+background-color: red;
+color: white;
+border-radius: 10px;
+}
+.username{
+    padding: 0px 10px;
+    color: rgb(0, 225, 255);
+    font-size: 18px;
+}

@@ -1,23 +1,42 @@
-import React from 'react';
-import { Card, Table } from 'react-bootstrap';
+import React, { useRef } from 'react';
+import { Card, Form, Table } from 'react-bootstrap';
 
 
 const AllProduct = ({ allProduct }) => {
     const { _id, name, price, description, username, status, email } = allProduct;
+    const idRef = useRef()
+    const handleStatusChange = e => {
+
+
+        // const status = statusRef.current.value;
+        const id = idRef.current.value;
+        const pId = { id };
+        console.log(id);
+        const proced = window.confirm('Are You sure you want to Approved..?');
+        if (proced) {
+
+
+            fetch('https://murmuring-wave-81699.herokuapp.com/OrderInfo/status', {
+                method: 'PUT',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(pId)
+
+            })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.modifiedCount) {
+                        alert('Approved successfully');
+
+                    }
+                })
+        }
+        e.preventDefault()
+    }
     return (
         <>
-            {/* <div className=" mr-3 w-100  d-flex justify-content-center align-items-center row row-cols-1 row-cols-md-4 my-3 g-5">
-                <Card className="mx-3  ">
 
-                    <Card.Body>
-                        <Card.Title>{name}</Card.Title>
-                        <p>Name: {username}</p>
-                        <p>Email: {email}</p>
-                        <p>Price :{price}</p>
-                        <p>Status :{status}</p>
-                    </Card.Body>
-                </Card>
-            </div> */}
 
 
             <tr>
@@ -26,7 +45,10 @@ const AllProduct = ({ allProduct }) => {
                 <td>{username}</td>
                 <td>{email}</td>
                 <td>{price}</td>
-                <td>{status}</td>
+                <td>
+                    <button className="status btn btn-warning" onClick={handleStatusChange}>{status}
+                        <Form.Control ref={idRef} hidden value={_id} type="text" placeholder="Enter title" /></button>
+                </td>
             </tr>
 
         </>
