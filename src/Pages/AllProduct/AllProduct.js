@@ -27,7 +27,7 @@ const AllProduct = ({ allProduct }) => {
                 .then(res => res.json())
                 .then(data => {
                     if (data.modifiedCount) {
-                        alert('Approved successfully');
+                        alert('Approved successfully, when you reload you can see approve status');
 
                     }
                 })
