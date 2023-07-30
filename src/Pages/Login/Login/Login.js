@@ -79,7 +79,7 @@ const Login = () => {
 
 
                 </form >
-                <p>-------------------------------</p>
+
                 <button onClick={handleGoogleSignIn} type="submit" className="btn btn-primary"> Google Sign In</button>
             </div>
             <Link to="/register">New User?Please Register</Link>

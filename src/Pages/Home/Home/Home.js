@@ -10,7 +10,7 @@ const Home = () => {
 
     useEffect(() => {
 
-        fetch('https://murmuring-wave-81699.herokuapp.com/products')
+        fetch('https://car-hut-server.onrender.com/products')
             .then(res => res.json())
             .then(data => setProducts(data.slice(0, 6)));
     }, [])

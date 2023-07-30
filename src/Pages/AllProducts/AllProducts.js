@@ -8,7 +8,7 @@ const AllProducts = () => {
     const [allProducts, setAllProducts] = useState([])
 
     useEffect(() => {
-        const url = `https://murmuring-wave-81699.herokuapp.com/allOder`
+        const url = `https://car-hut-server.onrender.com/allOder`
         fetch(url)
             .then(res => res.json())
             .then(data => setAllProducts(data));

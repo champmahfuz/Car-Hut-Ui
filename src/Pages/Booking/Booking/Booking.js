@@ -20,7 +20,7 @@ const Booking = () => {
     const { productId } = useParams();
 
     useEffect(() => {
-        const url = `https://murmuring-wave-81699.herokuapp.com/products/${productId}`;
+        const url = `https://car-hut-server.onrender.com/products/${productId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setMyProduct(data));
@@ -38,7 +38,7 @@ const Booking = () => {
         const status = statusRef.current.value;
         const newProduct = { username, email, name, price, description, status };
 
-        fetch('https://murmuring-wave-81699.herokuapp.com/products/myProducts', {
+        fetch('https://car-hut-server.onrender.com/products/myProducts', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

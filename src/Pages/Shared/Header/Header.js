@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
-import { Button, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import useAuth from '../../../hooks/useAuth';
 
 const Header = () => {
@@ -36,6 +36,7 @@ const Header = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+
         </>
     );
 };

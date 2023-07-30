@@ -4,7 +4,7 @@ import './ShowReview.css';
 const ShowReview = () => {
     const [review, setReview] = useState([]);
     useEffect(() => {
-        fetch('https://murmuring-wave-81699.herokuapp.com/usersreview')
+        fetch('https://car-hut-server.onrender.com/usersreview')
             .then(res => res.json())
             .then(data => setReview(data.slice(0, 6)));
 

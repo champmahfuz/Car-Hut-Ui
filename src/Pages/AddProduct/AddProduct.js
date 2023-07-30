@@ -8,7 +8,7 @@ const AddProduct = () => {
     const onSubmit = data => {
         console.log(data);
 
-        axios.post('https://murmuring-wave-81699.herokuapp.com/products', data)
+        axios.post('https://car-hut-server.onrender.com/products', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('added successfully');

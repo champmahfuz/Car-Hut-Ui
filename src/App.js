@@ -12,12 +12,9 @@ import Products from './Pages/Home/Products/Products';
 import AuthProvider from './contexts/AuthProvider/AuthProvider';
 import PrivateRoute from './Pages/Login/Login/PrivateRoute/PrivateRoute';
 import AddProduct from './Pages/AddProduct/AddProduct';
-import ManageProducts from './Pages/ManageProducts/ManageProducts';
 import Footer from './Pages/Shared/Footer/Footer';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
-import AllProducts from './Pages/AllProducts/AllProducts';
-import MyProducts from './Pages/MyProducts/MyProducts';
-import MakeAdmin from './Pages/MakeAdmin/MakeAdmin';
+
 
 function App() {
 
@@ -46,6 +43,7 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
+
             <PrivateRoute path="/dashboard">
               <Dashboard></Dashboard>
             </PrivateRoute>

@@ -8,7 +8,7 @@ const MyProducts = () => {
     const [myProducts, setMyProducts] = useState([])
 
     useEffect(() => {
-        const url = `https://murmuring-wave-81699.herokuapp.com/oneCustomerProducts?email=${user.email}`
+        const url = `https://car-hut-server.onrender.com/oneCustomerProducts?email=${user.email}`
         fetch(url)
             .then(res => res.json())
             .then(data => setMyProducts(data));

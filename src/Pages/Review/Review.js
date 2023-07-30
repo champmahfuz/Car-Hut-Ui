@@ -23,7 +23,7 @@ const Review = () => {
             comment, ...initialInfo, ...rate
         };
         console.log(newReview)
-        fetch('https://murmuring-wave-81699.herokuapp.com/usersreview', {
+        fetch('https://car-hut-server.onrender.com/usersreview', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

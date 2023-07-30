@@ -81,7 +81,7 @@ const useFirebase = () => {
     }, [])
 
     useEffect(() => {
-        fetch(`https://murmuring-wave-81699.herokuapp.com/users/${user.email}`)
+        fetch(`https://car-hut-server.onrender.com/users/${user.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
     }, [user.email])
@@ -98,7 +98,7 @@ const useFirebase = () => {
 
     const saveUser = (email, displayName, method) => {
         const user = { email, displayName };
-        fetch('https://murmuring-wave-81699.herokuapp.com/users', {
+        fetch('https://car-hut-server.onrender.com/users', {
             method: method,
             headers: {
                 'content-type': 'application/json'

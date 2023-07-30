@@ -5,13 +5,13 @@ import { Card } from 'react-bootstrap';
 const ManageProducts = () => {
     const [products, setProducts] = useState([])
     useEffect(() => {
-        fetch('https://murmuring-wave-81699.herokuapp.com/products')
+        fetch('https://car-hut-server.onrender.com/products')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);
 
     const handleDelete = id => {
-        const url = `https://murmuring-wave-81699.herokuapp.com/products/${id}`;
+        const url = `https://car-hut-server.onrender.com/products/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

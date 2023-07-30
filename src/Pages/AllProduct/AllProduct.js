@@ -16,7 +16,7 @@ const AllProduct = ({ allProduct }) => {
         if (proced) {
 
 
-            fetch('https://murmuring-wave-81699.herokuapp.com/OrderInfo/status', {
+            fetch('https://car-hut-server.onrender.com/OrderInfo/status', {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'

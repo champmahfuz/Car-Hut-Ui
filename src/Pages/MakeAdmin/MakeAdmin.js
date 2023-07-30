@@ -10,7 +10,7 @@ const MakeAdmin = () => {
     }
     const handleAdminSubmit = e => {
         const user = { email };
-        fetch('https://murmuring-wave-81699.herokuapp.com/users/admin', {
+        fetch('https://car-hut-server.onrender.com/users/admin', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
